@@ -1,4 +1,4 @@
-# Desafio de programação 1
+0# Desafio de programação 1
 A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de programador, de vários níveis.
 
 Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, porém normalmente você não deve precisar de mais do que algumas horas.
@@ -44,3 +44,13 @@ Adicionalmente, tentaremos verificar a sua familiarização com as bibliotecas p
 ### Referência
 
 Este desafio foi baseado neste outro desafio: https://github.com/lschallenges/data-engineering
+
+
+
+### Instruções para roda o Pojeto
+	Em ambiente de desenvolvimento por padrão utiliza o banco de dados sqlite3 e será necessário instala-lo, processo que ira variar conforme sistema operacional e gerenciador de pacotes, dessa forma o mesmo não será abordado aqui.
+	Com o ruby devidamente instalado(recomendo o uso do rbenv) na versão 2.4.2 ou maior, entre na raiz do projeto e executa `bundle install`
+	Depois `rails db:create; rails db:migrate` para criar a estrutura no banco de dados
+	Posteriormente executando `rails s` o upload de arquivos estara disponivel em http://localhost:3000/inputs
+
+
