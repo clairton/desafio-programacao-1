@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<table border='1'>
+	<thead>
+		<tr>
+			<th>Purchaser Name</th>
+			<th>Item Description</th>
+			<th>Item Price</th>
+			<th>Purchase Count</th>
+			<th>Purchase Total</th>
+			<th>Merchant Address</th>
+			<th>Merchant Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%@input.purchases.each do |purchase| %>
+			<tr>
+				<td>
+			  	<%=purchase.purchaser_name%>	
+				</td>
+				<td>
+			  	<%=purchase.item_description%>	
+				</td>
+				<td>
+			  	<%=number_to_currency purchase.item_price%>	
+				</td>
+				<td>
+			  	<%=purchase.purchase_count%>	
+				</td>
+				<td>
+			  	<%=number_to_currency purchase.purchase_total%>	
+				</td>
+				<td>
+			  	<%=purchase.merchant_address%>	
+				</td>
+				<td>
+			  	<%=purchase.merchant_name%>	
+				</td>
+			</tr>
+		<%end%>
+		<tr>
+			<td colspan="3" />
+			<td>Total</td>
+			<td><%=number_to_currency @input.total%></td>
+			<td colspan="2" />
+		</tr>
+	</tbody>
+</table>
+
+<%= link_to 'Back', root_path %>

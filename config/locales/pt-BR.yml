@@ -1,9 +1,9 @@
-en:
+pt-BR:
   number:
     currency:
       format:
-        unit: '$'
-        delimiter: ','
-        separator: '.'
+        unit: 'R$'
+        delimiter: '.'
+        separator: ','
         precision: 2
         format: '%u %n'

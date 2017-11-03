@@ -47,10 +47,10 @@ Este desafio foi baseado neste outro desafio: https://github.com/lschallenges/da
 
 
 
-### Instruções para roda o Pojeto
-	Em ambiente de desenvolvimento por padrão utiliza o banco de dados sqlite3 e será necessário instala-lo, processo que ira variar conforme sistema operacional e gerenciador de pacotes, dessa forma o mesmo não será abordado aqui.
-	Com o ruby devidamente instalado(recomendo o uso do rbenv) na versão 2.4.2 ou maior, entre na raiz do projeto e executa `bundle install`
-	Depois `rails db:create; rails db:migrate` para criar a estrutura no banco de dados
-	Posteriormente executando `rails s` o upload de arquivos estara disponivel em http://localhost:3000/inputs
+### Instruções para rodar o Projeto
+1. Em ambiente de desenvolvimento por padrão utiliza o banco de dados sqlite3 e será necessário instala-lo, processo que ira variar conforme sistema operacional e gerenciador de pacotes, dessa forma o mesmo não será abordado aqui.
+1. Com o ruby devidamente instalado(recomendo o uso do rbenv) na versão 2.4.2 ou maior, entre na raiz do projeto e executa `bundle install`
+1. Depois `rails db:create; rails db:migrate` para criar a estrutura no banco de dados
+1. Posteriormente executando `rails s` o upload de arquivos estara disponivel em http://localhost:3000
 
 
